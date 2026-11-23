@@ -45,10 +45,6 @@ function addMessage(role, text) {
 }
 
 form.addEventListener('submit', async (event) => {
-  event.preventEvent();
-});
-
-form.addEventListener('submit', async (event) => {
   event.preventDefault();
   const text = prompt.value.trim();
   if (!text) return;
